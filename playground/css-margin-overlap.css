@@ -1,0 +1,56 @@
+.box {
+    width: 100px;
+    height: 100px;
+    background: #999;
+}
+
+.bg-red {
+    background: red;
+}
+
+.bg-blue {
+    background: blue;
+}
+
+.bg-green {
+    background: green;
+}
+
+
+/* 兄弟元素间的外边距覆盖 */
+.sibling-one {
+    margin-bottom: 10px;
+}
+
+.sibling-two {
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+
+/* 父子间覆盖,前提是父子元素之间没有任何阻隔(不存在边框和任何的内边距)
+    第一种可能, 父元素没有外边距,但是子元素有外边距,子元素的外边距也会和父元素的外边距合并,成为父元素的外边距,子元素表现为顶部和父元素贴在一起
+    第二种可能, 父元素有外边距,子元素的外边距也会和父元素合并,合并后的外边距取两者的最大值
+
+    总之最后都变成了父元素的外边距...
+
+    最后考虑到如果父元素的兄弟元素还有垂直方向的外边距相遇,那么也会进一步合并,最极端的情况就可能是 子元素的外边距与兄弟元素的外边距合并
+ */
+.father {
+    margin-top: 10px;
+}
+
+.child {
+    width: 80px;
+    height: 80px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+/* 自合并 ,前提是上边距和下边距之间没有任何阻隔(包括边框,内边距以及元素内容) */
+.self-overlap {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    height: 0;
+}
+
+

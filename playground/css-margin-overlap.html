@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS 外边距覆盖</title>
+    <link rel="stylesheet" href="css-margin-overlap.css">
+</head>
+<body>
+
+    <!-- 两个兄弟元素在垂直方向上的外边距合并 -->
+    <div class="box sibling-one bg-red"></div>
+    <div class="box sibling-two bg-green"></div>
+
+    <!-- 父子元素之间的外边距合并 -->
+    <div class="box father bg-blue">
+        <div class="box child bg-red"></div>
+    </div>
+
+    <!-- 自合并 -->
+    <div class="box self-overlap"></div>
+</body>
+</html>

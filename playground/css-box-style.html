@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>CSS 框模型练习</title>
+    <link rel="stylesheet" href="css-box-style.css">
+</head>
+<body>
+
+    <!-- 简单的块级框模型 -->
+    <div class="box">
+        <div class="box-inner">元素内容</div>
+    </div>
+
+    <div class="box-sibling"></div>
+
+    <!-- 行内元素 -->
+    <div>
+        <span class="inline-box">行内</span>
+        <span class="inline-box">行内</span>
+        <span class="inline-box">行内</span>
+    </div>
+
+    <!-- 行内块级元素 -->
+    <div class="inline-block-container">
+        <span class="inline-block">行内块级元素</span>
+        <span class="inline-block">行内块级元素</span>
+        <span class="inline-block">行内块级元素</span>
+    </div>
+</body>
+</html>

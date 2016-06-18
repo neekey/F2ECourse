@@ -1,0 +1,122 @@
+<!doctype html>
+<html>
+    <!-- 这是页面的头,主要包含关于页面的 元信息 -->
+    <head>
+        <!-- 编码 -->
+        <meta charset="utf-8" >
+        <!-- 页面标题 -->
+        <title>this is my title</title>
+
+        <!-- 引用页面资源 -->
+
+        <!-- CSS的引入 -->
+
+        <!-- 内联样式表 -->
+        <style>
+
+            #test-table, #test-table td, #test-table th {
+                border: 1px solid #ddd;
+                border-collapse: collapse;
+            }
+
+        </style>
+
+        <!-- 外联样式表 -->
+        <link rel="stylesheet" href="mystyle.css">
+
+    </head>
+
+    <!-- 这是页面的主题内容 -->
+    <body>
+
+        <!-- 标题 heading -->
+        <h1>冠希新片流出</h1>
+
+        <!-- 段落 paragraph -->
+        <p>这是一个段落</p>
+
+        <!-- HTML 标签属性 -->
+        <X attrName1="attrValue1" attrName2="attrValue2"></X>
+
+        <!-- 联结 anchor href 指向地址,  target 新页面打开的目标  -->
+        <a href="http://taobao.com" target="_blank" >现在就去购物吧!>></a>
+
+        <!-- 图片 img   image source, src 设置图片来源, width 和 height 设置宽高 -->
+        <img width="100" src="https://img.alicdn.com/tps/TB13v7hLFXXXXavXFXXXXXXXXXX-520-280.jpg" />
+
+        <!-- 布局: 行内元素和块级元素 -->
+
+        <!-- 我的日记 -->
+        <div id="article" class="blue-bd" style="
+            background: #eee;
+            color: #333;
+            padding: 10px;
+            margin-top: 20px;
+            width: 400px;
+        " > <!-- 添加一个 行内样式 -->
+
+            <h3>这是我的小日记</h3>
+            <p>今天天气很好!</p>
+            <p>心情也很好</p>
+
+            <!-- 我的其他日记 -->
+            <div id="other-diaries">
+                <h4>我的其他日记:</h4>
+                <!-- 列表标签 -->
+                <ul>
+                    <li>
+                        <a href="#" target="newPage" >小日记1</a>
+                    </li>
+                    <li>
+                        <a href="#" target="newPage" >小日记2</a>
+                    </li>
+                    <li>
+                        <a href="#" target="newPage" >小日记3</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="more-links">
+            <h3>更多链接:</h3>
+            <!-- 京东的联结 -->
+            <span>
+                <a>1</a><a>1</a><a>1</a><a>1</a><a>1</a><a>1</a>
+            </span>
+                <!-- 淘宝的联结 -->
+            <span>
+                <a>1</a><a>1</a><a>1</a><a>1</a><a>1</a><a>1</a>
+            </span>
+        </div>
+
+        <!-- 表格 -->
+        <table id="test-table" class="red-text yellow-bg">
+            <!-- 表头 -->
+            <thead>
+                <tr>
+                    <th>1</th>
+                    <th>2</th>
+                    <th>3</th>
+                </tr>
+            </thead>
+
+            <!-- 主体 -->
+            <tbody>
+                <tr>
+                    <td rowspan colspan="2" id="unique-color">a</td>
+                    <td>b</td>
+                </tr>
+                <tr>
+                    <td>d</td>
+                    <td colspan="2">e</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- class 类属性, 和 id 属性的核心区别在于:
+            id 是页面中唯一的,一个元素只能添加一个id,
+            class不唯一,且一个元素可以拥有多个class,使用空格来分隔 -->
+        <h1 class="red-text yellow-bg blue-bd">我是一个标题</h1>
+        <p class="yellow-bg">这是我的文章内容</p>
+    </body>
+</html>

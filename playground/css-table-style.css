@@ -1,0 +1,63 @@
+/* 设置表格的样式 */
+.table-style {
+    border: 2px solid #ddd;
+
+    /* 设置单元格之间的边框是否合并 collapse | separate */
+    border-collapse: collapse;
+
+    /* 单元格之间的距离 */
+    border-spacing: 5px;
+
+    text-align: left;
+}
+
+/* 设置单元格的样式 */
+.table-style th,
+.table-style td {
+    border: 1px dashed #ddd;
+    padding: 5px;
+    border-left: 0;
+    border-right: 0;
+}
+
+/* 单独设置表头的样式 */
+.table-style th {
+    font-size: 18px;
+    font-weight: bold;
+    background: #eee;
+}
+
+/* 单独设置内容单元格的样式 */
+.table-style td {
+    font-size: 16px;
+    color: #666;
+    height: 50px;
+    width: 100px;
+
+    /* 垂直居中 top | middle | bottom */
+    vertical-align: middle;
+}
+
+.table-style .price {
+    color: red;
+    text-decoration: underline;
+}
+
+.table-style .amount {
+    color: blue;
+}
+
+.list-style {
+
+    /* 设置列表图标类型(系统内置样式) disc | circle | square | none */
+    list-style-type: disc;
+
+    /* 为列表的项目图标设置自定义图片 */
+    list-style-image: url(images/redis-icon.png);
+
+    /* 设置列表标记图的位置
+        outside: 图标展示在ul元素的元素内容左侧,
+        如果是 inside, 图标 会被展示在列表项元素内容的前面
+    */
+    list-style-position: outside;
+}

@@ -1,0 +1,15 @@
+.red-text {
+    color: red;
+}
+
+.yellow-bg {
+    background-color: yellow;
+}
+
+.blue-bd {
+    border: 5px dashed blue;
+}
+
+#unique-color {
+    color: aquamarine;
+}

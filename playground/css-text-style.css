@@ -1,0 +1,54 @@
+.css-text {
+
+    /* 字体颜色 */
+    color: red;
+
+    /* 字体大小 */
+    font-size: 24px;
+
+    /* 字体粗细  100 - 900 常用 normal | bold  */
+    font-weight: bold;
+
+    /* 行高   理解为 一行文字到下一行文字的距离 */
+    line-height: 40px;
+
+    /* 文字的水平对齐方式  left | right | center  */
+    text-align: center;
+
+    /* 首行文字缩进 */
+    text-indent: 40px;
+
+    /* 文字的装饰效果 none | underline | line-through  */
+    text-decoration: none;
+
+    /* 空值 空白/回车 的显示方式 和 是否换行  normal | nowrap | pre  */
+    white-space: normal;
+}
+
+/* 利用行高来设置内容的整体高度并实现 垂直文字居中 */
+.text-button {
+    font-size: 16px;
+    line-height: 42px;
+    background: #f40;
+    width: 300px;
+    text-align: center;
+    color: white;
+
+    /* 圆角效果  radius 半径 */
+    border-radius: 10px;
+}
+
+/* CSS的hover 伪类 */
+.text-button:hover {
+    background: orange;
+    font-size: 24px;
+}
+
+/* 利用 border-radius 绘制一个圆形 */
+.circle {
+    width: 50px;
+    height: 50px;
+    background: pink;
+    border: #f800f8 solid 5px;
+    border-radius: 50%;
+}

@@ -1,0 +1,34 @@
+/* 基本语法 */
+selector {
+    background-color: red;
+}
+
+/* 标签选择器 */
+p {}
+ul {}
+table {}
+
+/* ID选择器  <div id="id-name" ></div>  */
+#id-name {}
+
+/* 类选择器 */
+.red-title {
+    color: red;
+}
+
+/* 后代选择器 <p> <a></a> </p> <a></a> */
+p a {}
+
+/* 分组选择器,可以同时将多个 *选择器* 通过逗号一起使用 */
+#book th,
+#book td {
+
+}
+
+/* 下面有四个选择器 */
+p a,
+#book th,
+table,
+#id-name {
+
+}

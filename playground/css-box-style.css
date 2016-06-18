@@ -1,0 +1,73 @@
+.box {
+    background: yellow;
+
+    /* 元素的框模型由内向外有四部分内容构成 */
+
+    /* 元素内容,也即是元素的宽高 */
+    width: 100px;
+    height: 100px;
+
+    /* 元素的内边距 */
+    padding: 10px;
+
+    /* 元素的边框 */
+    border: 2px solid red;
+
+    /* 元素的外边距 */
+    margin-bottom: 10px;
+}
+
+.box-inner {
+    width: 100%;
+    height: 100%;
+    background: darkgoldenrod;
+}
+
+.box-sibling {
+    width: 100px;
+    height: 100px;
+    background: purple;
+}
+
+/* 行内元素的框模型 */
+.inline-box {
+    background: #f40;
+
+    /* 行内元素无法直接设置宽高 */
+    height: 10000px;
+    width: 1000px;
+
+    /* 行内元素可以正常设置水平方向的 内边距 / 边框 / 外边距 */
+    padding-left: 100px;
+    border: 2px solid red;
+    border-left-width: 10px;
+    margin-left: 50px;
+}
+
+/* 行内块级元素 的框模型 */
+.inline-block {
+    background: lightgreen;
+
+    /* 通过 display 来设置为 行内块级 元素 */
+    display: inline-block;
+
+    /* 行内块级元素可以任意设置宽高 */
+    width: 120px;
+    height: 50px;
+
+    /* 行内块级元素在垂直方向上的内边距/边框/外边距上的设置也不存在问题 */
+    padding: 10px 0;
+    border: 5px solid green;
+    margin: 10px 0;
+
+    font-size: 14px;
+}
+
+/* 当使用行内块级元素进行水平布局时,
+    可以通过 font-size: 0;
+    来去除元素间多余的空格造成的间隙,
+    但是这个属性也会影响其容器内的所有其他文字内容的大小,
+    所以要记得在相关容器中把这个属性覆盖回来 */
+.inline-block-container {
+    font-size: 0;
+}

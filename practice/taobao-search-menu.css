@@ -1,0 +1,43 @@
+/* ============== 菜单项 =============== */
+.menu {
+    list-style-type: none;
+    font-size: 0;
+    border-bottom: 2px solid #ff4300;
+    padding: 0;
+    width: 940px;
+}
+
+.menu li {
+    display: inline-block;
+    height: 38px;
+    color: #333;
+    line-height: 38px;
+    font-size: 16px;
+    padding: 0 20px;
+}
+
+.menu li a {
+    color: #333;
+    text-decoration: none;
+}
+
+
+.menu li.selected {
+    background: #ff4300;
+    color: white;
+}
+
+.menu li.selected a {
+    color: white;
+}
+
+
+/* ============== 搜索总览 ============= */
+.summary {
+
+}
+
+/* ============== 搜索过滤项 ============= */
+.filter {
+
+}

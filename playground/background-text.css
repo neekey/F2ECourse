@@ -1,0 +1,51 @@
+.color-box {
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    display: inline-block;
+}
+
+/* 系统自定义颜色 */
+.color-default {
+    background: lightseagreen;
+}
+
+/* 16进制 hexadecimal */
+.color-hex {
+    background: #59af42;
+}
+
+/* rgb | rgba 是 红绿蓝 三通道颜色  red | green | blue   */
+.color-rgb {
+    /* 每个通道的颜色范围为  0-255 */
+    background: rgb(125,50,240);
+}
+
+/* rgba 添加了额外的 透明度 通道,取值范围为 0-1 */
+.color-rgba {
+    background: rgba(240, 29, 142, 0.5);
+}
+
+.background {
+
+    /* 合并所有的规则为一条 */
+    background: yellow url(./images/redis-icon.png) no-repeat center center fixed;
+
+    /* 背景色 */
+    background-color: yellow;
+
+    /* 背景图 */
+    background-image: url(./images/redis-icon.png);
+
+    /* 设置背景图的重复  no-repeat | repeat | repeat-x | repeat-y  */
+    background-repeat: repeat-y;
+
+    /* 背景图的位置
+        可以结合背景图的位置和元素的尺寸来实现 背景图合并的功能
+        以淘宝首页的背景图为例: https://img.alicdn.com/tps/TB1VflPKXXXXXbvXXXXXXXXXXXX-229-193.png
+    */
+    background-position: 0 0;
+
+    /* 背景图的固定(不随着页面滚动而滚动) */
+    background-attachment: fixed;
+}
